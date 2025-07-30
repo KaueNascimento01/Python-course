@@ -20,12 +20,19 @@
 #     print('Sair')
 
 # Avaliação de curto circuito
-entrada = input ('[E]ntrar [S]air: ')
-senha_digitada = input ('Senha: ')
+while True:
+    entrada = input ('[E]ntrar [S]air: ')
 
-senha_permitida = '123456'
+    if entrada not in ['E', 'e', 'S', 's']:
+        print('Entrada inválida. Digite apenas "Entrar" para entrar ou "Sair" para sair.')
+        continue
 
-if (entrada == 'E' or entrada == 'e') and senha_digitada:
-    print('entrar')
-else:
-    print('Sair')
+    senha_digitada = input ('Senha: ')
+
+    senha_permitida = '123456'
+
+    if (entrada == 'E' or entrada == 'e') and senha_digitada == senha_permitida:
+            print('entrar')
+
+    else:
+            print('Sair')
