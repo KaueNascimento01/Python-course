@@ -4,7 +4,7 @@ informe se este número é par ou ímpar. Caso o usuário não digite um número
 inteiro, informe que não é um número inteiro.
 """
 def print_titulo(texto, largura = 57):
-    print('\n' * 50)
+    print('\n' * 6)
     print('-' * largura)
     print(texto.center(largura))
     print('-' * largura)
